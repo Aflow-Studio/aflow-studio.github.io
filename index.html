@@ -3,43 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Carat: Gem Merge &amp; Hideout</title>
-<meta name="description" content="Carat is in open beta on Android, free. Merge jewels, crack the vault and build your thief's hideout.">
-<meta property="og:title" content="Carat: Gem Merge &amp; Hideout">
-<meta property="og:description" content="Open beta on Android, free.">
-<meta property="og:image" content="https://aflow-studio.github.io/carat/icon.png">
-<link rel="icon" href="icon.png">
+<title>Aflow Studio</title>
+<meta name="description" content="Mobile games and apps by Aflow Studio.">
 <style>
-  :root { --bg: #14100c; --or: #e8c478; --creme: #f5ecdc; --doux: #b9a98f; }
   * { box-sizing: border-box; }
-  body { margin: 0; min-height: 100vh; background: radial-gradient(circle at 50% 30%, #2a1f15, var(--bg) 70%);
-         color: var(--creme); font: 17px/1.5 Georgia, "Times New Roman", serif;
-         display: flex; align-items: center; justify-content: center; padding: 24px 16px; text-align: center; }
-  main { max-width: 380px; width: 100%; }
-  img { width: 132px; height: 132px; border-radius: 28px; box-shadow: 0 10px 40px rgba(232, 80, 80, .25); }
-  h1 { font-weight: normal; letter-spacing: .3em; color: var(--or); font-size: 40px; margin: 22px 0 4px; }
-  .beta { font-family: system-ui, sans-serif; font-size: 14px; letter-spacing: .12em; color: var(--doux); margin: 0 0 28px; }
-  a.btn { display: block; padding: 17px 20px; border-radius: 999px; text-decoration: none;
-          font: 600 18px system-ui, sans-serif; margin: 0 0 12px; }
-  .principal { background: #e8b046; color: #1e140a; }
-  .second { border: 1px solid #5a4a35; color: var(--creme); }
-  p.note { font-family: system-ui, sans-serif; font-size: 13px; color: var(--doux); margin-top: 22px; }
+  body { margin: 0; min-height: 100vh; background: #101014; color: #ecebf2;
+         font: 17px/1.5 system-ui, -apple-system, sans-serif; padding: 48px 16px; }
+  main { max-width: 460px; margin: 0 auto; }
+  h1 { font-weight: 600; font-size: 30px; margin: 0 0 6px; text-align: center; }
+  p.sous { color: #9a99a8; text-align: center; margin: 0 0 32px; }
+  a.app { display: flex; align-items: center; gap: 16px; padding: 14px; margin: 0 0 12px;
+          background: #1a1a21; border: 1px solid #2a2a33; border-radius: 18px; color: inherit; text-decoration: none; }
+  a.app img { width: 64px; height: 64px; border-radius: 14px; flex: none; }
+  a.app strong { display: block; font-size: 18px; }
+  a.app span { color: #9a99a8; font-size: 14px; }
 </style>
 </head>
 <body>
 <main>
-  <img src="icon.png" alt="Carat">
-  <h1>CARAT</h1>
-  <p class="beta">OPEN BETA · ANDROID · FREE</p>
-  <a class="btn principal" id="play" href="https://play.google.com/store/apps/details?id=com.aflowstudio.carat">Get it on Google Play</a>
-  <a class="btn second" id="appli" href="intent://details?id=com.aflowstudio.carat#Intent;scheme=market;package=com.android.vending;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.aflowstudio.carat;end">Open the Play Store app</a>
-  <p class="note">Nothing happens? Tap ⋮ at the top right, then “Open in browser”.</p>
+  <h1>Aflow Studio</h1>
+  <p class="sous">Mobile games and apps</p>
+  <a class="app" href="carat/"><img src="carat-icon.png" alt=""><div><strong>Carat: Gem Merge &amp; Hideout</strong><span>Merge jewels, crack the vault and build your thief's hideout.</span></div></a>
+  <a class="app" href="monirate/"><img src="monirate-icon.png" alt=""><div><strong>MoniRate - Currencies &amp; Crypto</strong><span>Live exchange rates for currencies and crypto, in your pocket.</span></div></a>
 </main>
-<script>
-  // Visiteur Android : on l'envoie tout de suite sur la fiche Play ; les boutons restent en secours.
-  if (/Android/i.test(navigator.userAgent)) {
-    setTimeout(function () { location.href = document.getElementById("play").href; }, 600);
-  }
-</script>
 </body>
 </html>
